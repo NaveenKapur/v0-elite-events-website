@@ -79,7 +79,7 @@ export default function ClientPage() {
           <div className="flex items-center gap-4">
             <div className="hidden items-center gap-4 md:flex">
               <Link
-                href="https://www.youtube.com/user/1dersevents"
+                href="https://www.youtube.com/@1dersevents"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -87,7 +87,7 @@ export default function ClientPage() {
                 <Youtube className="h-5 w-5 text-white hover:text-gradientPink transition-colors" />
               </Link>
               <Link
-                href="https://www.instagram.com/1ders.events/reels/"
+                href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -102,12 +102,21 @@ export default function ClientPage() {
               >
                 <Facebook className="h-5 w-5 text-white hover:text-gradientPink transition-colors" />
               </Link>
+              <Link
+                href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 text-white hover:text-gradientPink transition-colors" />
+              </Link>
             </div>
             <Button
+              asChild
               variant="outline"
               className="hidden rounded-full border-0 bg-white/10 text-white backdrop-blur-md hover:bg-white/20 md:flex"
             >
-              Book Consultation
+              <a href="tel:+919810248854">Book Consultation</a>
             </Button>
             <Button
               variant="outline"
@@ -222,6 +231,24 @@ export default function ClientPage() {
           </Link>
           <div className="mt-4 flex gap-4">
             <Link
+              href="https://www.youtube.com/@1dersevents"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
+              aria-label="Youtube"
+            >
+              <Youtube className="h-5 w-5" />
+            </Link>
+            <Link
+              href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </Link>
+            <Link
               href="https://www.facebook.com/1ders/"
               target="_blank"
               rel="noopener noreferrer"
@@ -231,26 +258,17 @@ export default function ClientPage() {
               <Facebook className="h-5 w-5" />
             </Link>
             <Link
-              href="https://www.instagram.com/1ders.events/reels/"
+              href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
-              aria-label="Instagram"
+              aria-label="LinkedIn"
             >
-              <Instagram className="h-5 w-5" />
-            </Link>
-            <Link
-              href="https://www.youtube.com/user/1dersevents"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
-              aria-label="Youtube"
-            >
-              <Youtube className="h-5 w-5" />
+              <Linkedin className="h-5 w-5" />
             </Link>
           </div>
-          <Button className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            Book Consultation
+          <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
+            <a href="tel:+919810248854">Book Consultation</a>
           </Button>
         </div>
       </div>
@@ -821,7 +839,7 @@ export default function ClientPage() {
                   {[
                     {
                       title: "Private Consultation",
-                      info: "+1 (888) 555-0123",
+                      info: "+91 9810248854",
                       icon: (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -895,15 +913,17 @@ export default function ClientPage() {
                 </div>
 
                 <div className="mt-8 flex gap-4">
-                  {[Instagram, Facebook, Linkedin].map((Icon, i) => (
+                  {[Youtube, Instagram, Facebook, Linkedin].map((Icon, i) => (
                     <Link
                       key={i}
                       href={
                         i === 0
-                          ? "https://www.instagram.com/1ders.events/reels/"
+                          ? "https://www.youtube.com/@1dersevents"
                           : i === 1
-                            ? "https://www.facebook.com/1ders/"
-                            : "https://www.linkedin.com/company/1ders-events-solutions/"
+                            ? "https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
+                            : i === 2
+                              ? "https://www.facebook.com/1ders/"
+                              : "https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
                       }
                       target="_blank"
                       rel="noopener noreferrer"

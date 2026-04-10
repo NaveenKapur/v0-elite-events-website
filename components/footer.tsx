@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Instagram, Facebook, Youtube } from "lucide-react"
+import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -80,7 +80,7 @@ export function Footer() {
             </ul>
             <div className="mt-4 flex gap-3">
               <Link
-                href="https://www.youtube.com/user/1dersevents"
+                href="https://www.youtube.com/@1dersevents"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
@@ -90,7 +90,7 @@ export function Footer() {
                 <span className="sr-only">YouTube</span>
               </Link>
               <Link
-                href="https://www.instagram.com/1ders.events/reels/"
+                href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
@@ -108,6 +108,16 @@ export function Footer() {
               >
                 <Facebook className="h-4 w-4" />
                 <span className="sr-only">Facebook</span>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+                <span className="sr-only">LinkedIn</span>
               </Link>
             </div>
           </div>

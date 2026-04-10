@@ -25,9 +25,9 @@ export function EventPlanningBusinessSchema() {
     email: "info@1ders.in",
     sameAs: [
       "https://www.facebook.com/1ders/",
-      "https://www.instagram.com/1ders.events/reels/",
-      "https://www.youtube.com/user/1dersevents",
-      "https://www.linkedin.com/company/1ders-events-solutions/",
+      "https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU=",
+      "https://www.youtube.com/@1dersevents",
+      "https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/",
     ],
     openingHoursSpecification: [
       {

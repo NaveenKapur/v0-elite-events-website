@@ -190,7 +190,7 @@ export default function SitemapPage() {
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/1ders.events/reels/"
+                        href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white/80 hover:text-white"
@@ -200,7 +200,7 @@ export default function SitemapPage() {
                     </li>
                     <li>
                       <a
-                        href="https://www.youtube.com/user/1dersevents"
+                        href="https://www.youtube.com/@1dersevents"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white/80 hover:text-white"
@@ -210,7 +210,7 @@ export default function SitemapPage() {
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/company/1ders-events-solutions/"
+                        href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white/80 hover:text-white"

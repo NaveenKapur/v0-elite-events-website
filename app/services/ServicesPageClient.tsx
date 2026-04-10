@@ -49,10 +49,11 @@ export default function ServicesPageClient() {
           </nav>
           <div className="flex items-center gap-4">
             <Button
+              asChild
               variant="outline"
               className="hidden rounded-full border-0 bg-white/10 text-white backdrop-blur-md hover:bg-white/20 md:flex"
             >
-              Book Consultation
+              <a href="tel:+919810248854">Book Consultation</a>
             </Button>
             <Button
               variant="outline"
@@ -138,8 +139,8 @@ export default function ServicesPageClient() {
               {item.name}
             </Link>
           ))}
-          <Button className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            Book Consultation
+          <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
+            <a href="tel:+919810248854">Book Consultation</a>
           </Button>
         </div>
       </div>

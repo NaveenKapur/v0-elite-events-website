@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Mail, Phone, Clock, Instagram, Facebook, Linkedin } from "lucide-react"
+import { MapPin, Mail, Phone, Clock, Instagram, Facebook, Linkedin, Youtube } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ConfettiOverlay } from "@/components/confetti-overlay"
 import { Footer } from "@/components/footer"
@@ -49,10 +49,11 @@ export default function ContactPageClient() {
           </nav>
           <div className="flex items-center gap-4">
             <Button
+              asChild
               variant="outline"
               className="hidden rounded-full border-0 bg-white/10 text-white backdrop-blur-md hover:bg-white/20 md:flex"
             >
-              Book Consultation
+              <a href="tel:+919810248854">Book Consultation</a>
             </Button>
             <Button
               variant="outline"
@@ -138,8 +139,8 @@ export default function ContactPageClient() {
               {item.name}
             </Link>
           ))}
-          <Button className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            Book Consultation
+          <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
+            <a href="tel:+919810248854">Book Consultation</a>
           </Button>
         </div>
       </div>
@@ -377,9 +378,14 @@ export default function ContactPageClient() {
                   <div className="mt-4 flex gap-3 sm:gap-4">
                     {[
                       {
+                        icon: <Youtube className="h-4 w-4 sm:h-5 sm:w-5" />,
+                        label: "YouTube",
+                        href: "https://www.youtube.com/@1dersevents",
+                      },
+                      {
                         icon: <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />,
                         label: "Instagram",
-                        href: "https://www.instagram.com/1ders.events/reels/",
+                        href: "https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU=",
                       },
                       {
                         icon: <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />,
@@ -389,7 +395,7 @@ export default function ContactPageClient() {
                       {
                         icon: <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />,
                         label: "LinkedIn",
-                        href: "https://www.linkedin.com/company/1ders-events-solutions/",
+                        href: "https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/",
                       },
                     ].map((social, i) => (
                       <Link

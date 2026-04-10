@@ -73,7 +73,7 @@ export default function AboutPageClient() {
 
             <div className="hidden items-center gap-4 md:flex">
               <Link
-                href="https://www.youtube.com/user/1dersevents"
+                href="https://www.youtube.com/@1dersevents"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -95,7 +95,7 @@ export default function AboutPageClient() {
                 </svg>
               </Link>
               <Link
-                href="https://www.instagram.com/1ders.events/reels/"
+                href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -138,10 +138,33 @@ export default function AboutPageClient() {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </Link>
+              <Link
+                href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-white hover:text-gradientPink transition-colors"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </Link>
             </div>
 
-            <Button className="hidden rounded-full bg-gradient-to-r from-gradientPurple to-gradientPink px-6 py-2 text-sm font-medium text-white transition-transform hover:scale-105 md:block">
-              Book Consultation
+            <Button asChild className="hidden rounded-full bg-gradient-to-r from-gradientPurple to-gradientPink px-6 py-2 text-sm font-medium text-white transition-transform hover:scale-105 md:block">
+              <a href="tel:+919810248854">Book Consultation</a>
             </Button>
 
             <Menu />

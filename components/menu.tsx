@@ -11,6 +11,7 @@ import {
   Facebook,
   Instagram,
   Youtube,
+  Linkedin,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -149,13 +150,13 @@ export function Menu() {
           <Link href="/contact" className="text-lg font-medium text-white hover:text-white/80">
             Contact
           </Link>
-          <Button className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            Book Consultation
+          <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
+            <a href="tel:+919810248854">Book Consultation</a>
           </Button>
         </div>
         <div className="mt-6 flex items-center gap-6 border-t border-white/10 pt-6">
           <Link
-            href="https://www.youtube.com/user/1dersevents"
+            href="https://www.youtube.com/@1dersevents"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
@@ -163,7 +164,7 @@ export function Menu() {
             <Youtube className="h-6 w-6 text-white hover:text-gradientPink transition-colors" />
           </Link>
           <Link
-            href="https://www.instagram.com/1ders.events/reels/"
+            href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -172,6 +173,9 @@ export function Menu() {
           </Link>
           <Link href="https://www.facebook.com/1ders/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <Facebook className="h-6 w-6 text-white hover:text-gradientPink transition-colors" />
+          </Link>
+          <Link href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <Linkedin className="h-6 w-6 text-white hover:text-gradientPink transition-colors" />
           </Link>
         </div>
       </SheetContent>

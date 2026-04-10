@@ -6,7 +6,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu } from "@/components/dropdown-menu"
 import { ConfettiOverlay } from "@/components/confetti-overlay"
-import { Facebook, Instagram, Youtube } from "lucide-react"
+import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react"
 import { Footer } from "@/components/footer"
 
 interface ServiceLayoutProps {
@@ -83,7 +83,7 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-3">
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/1ders/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -92,7 +92,7 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
                 <Facebook className="h-5 w-5" />
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -101,7 +101,7 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link
-                href="https://youtube.com"
+                href="https://www.youtube.com/@1dersevents"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -109,12 +109,22 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
               >
                 <Youtube className="h-5 w-5" />
               </Link>
+              <Link
+                href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </Link>
             </div>
             <Button
+              asChild
               variant="outline"
               className="hidden rounded-full border-0 bg-white/10 text-white backdrop-blur-md hover:bg-white/20 md:flex"
             >
-              Book Consultation
+              <a href="tel:+919810248854">Book Consultation</a>
             </Button>
             <Button
               variant="outline"
@@ -229,7 +239,7 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
           </Link>
           <div className="mt-4 flex gap-4">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/1ders/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
@@ -238,7 +248,7 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
               <Facebook className="h-5 w-5" />
             </Link>
             <Link
-              href="https://instagram.com"
+              href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
@@ -247,7 +257,7 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
               <Instagram className="h-5 w-5" />
             </Link>
             <Link
-              href="https://youtube.com"
+              href="https://www.youtube.com/@1dersevents"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
@@ -255,9 +265,18 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
             >
               <Youtube className="h-5 w-5" />
             </Link>
+            <Link
+              href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </Link>
           </div>
-          <Button className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            Book Consultation
+          <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
+            <a href="tel:+919810248854">Book Consultation</a>
           </Button>
         </div>
       </div>
