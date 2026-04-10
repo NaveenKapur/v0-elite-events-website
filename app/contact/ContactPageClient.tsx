@@ -325,8 +325,8 @@ export default function ContactPageClient() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white">Phone</h3>
-                      <p className="mt-1 text-white/80">+91 9810101023 (Main)</p>
-                      <p className="text-white/80">+91 9818316005 (Corporate)</p>
+                      <p className="mt-1 text-white/80">+91 9818316005 (Main)</p>
+                      <p className="text-white/80">+91 9810248854 (Corporate)</p>
                       <p className="text-white/80">+91 8800994477 (Wedding)</p>
                       <p className="text-white/80">+91 88000 25884 (Career)</p>
                     </div>
@@ -576,7 +576,7 @@ export default function ContactPageClient() {
                 <div className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
                   <Button
                     className="group relative overflow-hidden rounded-full bg-gradient-to-r from-gradientPurple to-gradientPink px-8 py-6 text-lg font-medium text-white"
-                    onClick={() => (window.location.href = "tel:09810101023")}
+                    onClick={() => (window.location.href = "tel:09818316005")}
                   >
                     <span className="relative z-10">Discuss Your Event</span>
                     <span className="absolute inset-0 z-0 bg-gradient-to-r from-gradientPink to-gradientPurple opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
