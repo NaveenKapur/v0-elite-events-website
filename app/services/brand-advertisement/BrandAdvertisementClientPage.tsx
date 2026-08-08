@@ -67,7 +67,7 @@ const caseStudies = [
     title: "Tech Brand Launch Campaign",
     description:
       "We developed and executed a comprehensive brand launch campaign for a tech startup, including identity design, digital marketing strategy, and experiential activations that resulted in 200% higher engagement than industry benchmarks.",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/brand-launch.jpg",
+    imageSrc: "/images/brand-launch.jpg",
     metrics: [
       { label: "Engagement", value: "+200%" },
       { label: "Brand Awareness", value: "+150%" },
@@ -78,7 +78,7 @@ const caseStudies = [
     title: "FMCG Product Rebranding",
     description:
       "Our team revitalized a legacy FMCG brand with a fresh identity and multi-channel advertising campaign, leading to a 45% increase in market share within six months of launch.",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/fmcg-product-rebranding.jpg",
+    imageSrc: "/images/fmcg-product-rebranding.jpg",
     metrics: [
       { label: "Market Share", value: "+45%" },
       { label: "Consumer Recall", value: "+78%" },
@@ -133,7 +133,7 @@ export default function BrandAdvertisementClientPage() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-black opacity-70" />
             <Image
-              src="https://www.nkdigital.agency/clients/oneders/img/brand-advertisement-hero.jpg"
+              src="/images/brand-advertisement-hero.jpg"
               alt="Brand Advertisement"
               fill
               className="object-cover"
@@ -190,7 +190,7 @@ export default function BrandAdvertisementClientPage() {
                   <div className="space-y-4">
                     <div className="aspect-square overflow-hidden rounded-lg">
                       <Image
-                        src="https://www.nkdigital.agency/clients/oneders/img/brand-strategy.jpg"
+                        src="/images/brand-strategy.jpg"
                         alt="Brand Strategy"
                         width={300}
                         height={300}
@@ -199,7 +199,7 @@ export default function BrandAdvertisementClientPage() {
                     </div>
                     <div className="aspect-video overflow-hidden rounded-lg">
                       <Image
-                        src="https://www.nkdigital.agency/clients/oneders/img/brand-identity.jpg"
+                        src="/images/brand-identity.jpg"
                         alt="Brand Identity"
                         width={300}
                         height={200}
@@ -210,7 +210,7 @@ export default function BrandAdvertisementClientPage() {
                   <div className="space-y-4 pt-8">
                     <div className="aspect-video overflow-hidden rounded-lg">
                       <Image
-                        src="https://www.nkdigital.agency/clients/oneders/img/advertising-campaign.jpg"
+                        src="/images/advertising-campaign.jpg"
                         alt="Advertising Campaign"
                         width={300}
                         height={200}
@@ -219,7 +219,7 @@ export default function BrandAdvertisementClientPage() {
                     </div>
                     <div className="aspect-square overflow-hidden rounded-lg">
                       <Image
-                        src="https://www.nkdigital.agency/clients/oneders/img/experiential-marketing.jpg"
+                        src="/images/experiential-marketing.jpg"
                         alt="Experiential Marketing"
                         width={300}
                         height={300}

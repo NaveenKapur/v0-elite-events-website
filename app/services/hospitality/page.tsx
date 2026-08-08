@@ -9,7 +9,7 @@ export const metadata = generateMetadata({
     "Comprehensive hospitality services that ensure your guests have a seamless and unforgettable experience at your events with personalized attention.",
   canonical: "/services/hospitality",
   keywords: ["event hospitality", "guest management", "VIP services", "concierge services", "event catering"],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/hospitality.webp",
+  ogImage: "/images/hospitality.webp",
 })
 
 export default function HospitalityPage() {
@@ -19,7 +19,7 @@ export default function HospitalityPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/hospitality.webp"
+          src="/images/hospitality.webp"
           alt="Hospitality Services - Professional concierge desk with service bell"
           fill
           className="object-cover"
@@ -73,13 +73,13 @@ export default function HospitalityPage() {
             title: "International Corporate Summit",
             description:
               "We provided comprehensive hospitality services for a global corporate summit, managing accommodation, transportation, catering, and on-site support for 800+ international delegates, resulting in exceptional satisfaction scores.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/international-corporate-hospitality.jpg",
+            imageSrc: "/images/international-corporate-hospitality.jpg",
           },
           {
             title: "Luxury Destination Wedding",
             description:
               "Our team managed all aspects of hospitality for a high-profile destination wedding, ensuring seamless travel, accommodation, and personalized services for 250 guests, creating a truly unforgettable experience.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/luxury-destination-wedding.jpg",
+            imageSrc: "/images/luxury-destination-wedding.jpg",
           },
         ]}
       />

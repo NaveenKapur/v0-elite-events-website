@@ -13,7 +13,7 @@ export function generateMetadata({
   title,
   description,
   keywords = [],
-  ogImage = "https://www.nkdigital.agency/clients/oneders/img/og-image.jpg",
+  ogImage = "/images/og-image.jpg",
   ogType = "website",
   canonical = "",
 }: PageMetadataProps): Metadata {

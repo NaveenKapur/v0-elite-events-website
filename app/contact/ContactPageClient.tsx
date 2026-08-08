@@ -151,7 +151,7 @@ export default function ContactPageClient() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-black opacity-60" />
             <Image
-              src="https://www.nkdigital.agency/clients/oneders/img/1ders-event-contact.webp"
+              src="/images/1ders-event-contact.webp"
               alt="Contact Onder Events - Elegant event venue with floral decorations"
               fill
               className="object-cover"

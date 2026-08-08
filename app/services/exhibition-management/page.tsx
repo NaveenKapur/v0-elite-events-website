@@ -15,7 +15,7 @@ export const metadata = generateMetadata({
     "booth design",
     "exhibition logistics",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/exhibition-management-header.jpg",
+  ogImage: "/images/exhibition-management-header.jpg",
 })
 
 export default function ExhibitionManagementPage() {
@@ -25,7 +25,7 @@ export default function ExhibitionManagementPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/exhibition-management-header.jpg"
+          src="/images/exhibition-management-header.jpg"
           alt="Exhibition Management"
           fill
           className="object-cover"
@@ -81,13 +81,13 @@ export default function ExhibitionManagementPage() {
             title: "International Trade Show",
             description:
               "We managed a company's presence at a major international trade show, designing an award-winning booth and creating an interactive visitor experience that generated 3x more qualified leads than their previous exhibitions.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/exhibition-management2.webp",
+            imageSrc: "/images/exhibition-management2.webp",
           },
           {
             title: "Product Exhibition Series",
             description:
               "Our team developed and executed a multi-city product exhibition tour, creating consistent brand experiences while adapting to different venues and regional preferences, resulting in significant market penetration for the client.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/exhibition_management.jpg",
+            imageSrc: "/images/exhibition_management.jpg",
           },
         ]}
       />

@@ -15,7 +15,7 @@ export const metadata = generateMetadata({
     "custom booth construction",
     "exhibition stand design",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/wooden-stall-fabrication.jpeg",
+  ogImage: "/images/wooden-stall-fabrication.jpeg",
 })
 
 export default function StallFabricationPage() {
@@ -25,7 +25,7 @@ export default function StallFabricationPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/wooden-stall-fabrication.jpeg"
+          src="/images/wooden-stall-fabrication.jpeg"
           alt="Stall Fabrication"
           fill
           className="object-cover"
@@ -81,13 +81,13 @@ export default function StallFabricationPage() {
             title: "Award-Winning Trade Show Booth",
             description:
               "We designed and fabricated an innovative double-story exhibition booth for a technology company that won 'Best Booth Design' at a major industry trade show and increased visitor engagement by 70% compared to previous years.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/stall-fabrications.JPG",
+            imageSrc: "/images/stall-fabrications.JPG",
           },
           {
             title: "Sustainable Exhibition Design",
             description:
               "Our team created an eco-friendly exhibition stall using sustainable materials and modular design that reduced the client's carbon footprint while creating a compelling brand experience that aligned with their environmental values.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/stall-fabrication.avif",
+            imageSrc: "/images/stall-fabrication.avif",
           },
         ]}
       />

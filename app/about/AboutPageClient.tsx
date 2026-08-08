@@ -178,7 +178,7 @@ export default function AboutPageClient() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-black opacity-60" />
             <Image
-              src="https://www.nkdigital.agency/clients/oneders/img/about-1ders.jpg"
+              src="/images/about-1ders.jpg"
               alt="Elegant event space with beautifully decorated tables and floral arrangements"
               fill
               className="object-cover"
@@ -224,7 +224,7 @@ export default function AboutPageClient() {
 
                 <div className="relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                   <Image
-                    src="https://www.nkdigital.agency/clients/oneders/img/wedding-in-udaipur.webp"
+                    src="/images/wedding-in-udaipur.webp"
                     alt="Onder Events legacy"
                     fill
                     className="object-cover"
@@ -526,7 +526,7 @@ export default function AboutPageClient() {
 
                 <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                   <Image
-                    src="https://www.nkdigital.agency/clients/oneders/img/contact-us.jpeg"
+                    src="/images/contact-us.jpeg"
                     alt="Luxury event management"
                     fill
                     className="object-cover"

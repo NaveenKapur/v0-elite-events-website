@@ -68,7 +68,7 @@ const caseStudies = [
     title: "Annual Corporate Gala",
     description:
       "We designed and executed an immersive entertainment experience for a Fortune 500 company's annual gala, featuring celebrity performances, interactive installations, and a custom-produced awards ceremony that received rave reviews from 1,200+ attendees.",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/corporate-events-home.jpg",
+    imageSrc: "/images/corporate-events-home.jpg",
     highlights: [
       "1,200+ executive attendees",
       "Celebrity entertainment",
@@ -80,7 +80,7 @@ const caseStudies = [
     title: "Leadership Retreat Entertainment",
     description:
       "Our team curated a multi-day entertainment program for a tech company's leadership retreat, blending inspirational speakers, team-building activities, and evening performances that fostered connection and rejuvenation.",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/corporate-events.webp",
+    imageSrc: "/images/corporate-events.webp",
     highlights: ["Multi-day program", "Inspirational speakers", "Team-building activities", "Evening performances"],
   },
 ]
@@ -114,7 +114,7 @@ export default function CorporateEntertainmentClientPage() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-black opacity-70" />
             <Image
-              src="https://www.nkdigital.agency/clients/oneders/img/corporate-entertainment-header.jpeg"
+              src="/images/corporate-entertainment-header.jpeg"
               alt="Corporate Entertainment Events - Dance Performance"
               fill
               className="object-cover"
@@ -277,7 +277,7 @@ export default function CorporateEntertainmentClientPage() {
 
                 <div className="relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                   <Image
-                    src="https://www.nkdigital.agency/clients/oneders/img/corporate-entertainment-event.jpg"
+                    src="/images/corporate-entertainment-event.jpg"
                     alt="Why choose us for corporate entertainment"
                     fill
                     className="object-cover"

@@ -151,7 +151,7 @@ export default function ServicesPageClient() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-black opacity-60" />
             <Image
-              src="https://www.nkdigital.agency/clients/oneders/img/luxury-wedding.jpg"
+              src="/images/luxury-wedding.jpg"
               alt="Luxury event services"
               fill
               className="object-cover"
@@ -222,7 +222,7 @@ export default function ServicesPageClient() {
 
                   <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/luxury-wedding.jpg"
+                      src="/images/luxury-wedding.jpg"
                       alt="Luxury destination weddings"
                       fill
                       className="object-cover"
@@ -283,7 +283,7 @@ export default function ServicesPageClient() {
                 <div className="order-1 md:order-2">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/corporate-event-conferences.jpg"
+                      src="/images/corporate-event-conferences.jpg"
                       alt="Corporate events and conferences"
                       fill
                       className="object-cover"
@@ -347,7 +347,7 @@ export default function ServicesPageClient() {
 
                   <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/product-launch-service.jpg"
+                      src="/images/product-launch-service.jpg"
                       alt="Roadshows and product launches"
                       fill
                       className="object-cover"
@@ -407,7 +407,7 @@ export default function ServicesPageClient() {
                 <div className="order-1 md:order-2">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/bar-decor.jpg"
+                      src="/images/bar-decor.jpg"
                       alt="Social celebrations and private events"
                       fill
                       className="object-cover"

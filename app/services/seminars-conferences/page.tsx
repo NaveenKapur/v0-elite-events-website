@@ -15,7 +15,7 @@ export const metadata = generateMetadata({
     "knowledge events",
     "business seminars",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/seminar-conference-hero.jpg",
+  ogImage: "/images/seminar-conference-hero.jpg",
 })
 
 export default function SeminarsConferencesPage() {
@@ -25,7 +25,7 @@ export default function SeminarsConferencesPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/seminar-conference-hero.jpg"
+          src="/images/seminar-conference-hero.jpg"
           alt="Seminars and Conferences"
           fill
           className="object-cover"
@@ -81,13 +81,13 @@ export default function SeminarsConferencesPage() {
             title: "International Medical Conference",
             description:
               "We managed a three-day medical conference with 1,500+ attendees from 30+ countries, coordinating scientific sessions, workshops, poster presentations, and networking events that received exceptional feedback from participants.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/seminar-conferences.jpg",
+            imageSrc: "/images/seminar-conferences.jpg",
           },
           {
             title: "Leadership Development Seminar Series",
             description:
               "Our team developed and executed a series of executive leadership seminars across multiple cities, creating consistent high-quality experiences while adapting to different venues and audience needs.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/seminar-management.jpg",
+            imageSrc: "/images/seminar-management.jpg",
           },
         ]}
       />

@@ -7,7 +7,7 @@ export const metadata = generateMetadata({
     "Strategic brand positioning and innovative advertising solutions that create lasting impact and drive measurable results for your business.",
   canonical: "/services/brand-advertisement",
   keywords: ["brand strategy", "advertising services", "brand positioning", "marketing campaigns", "brand identity"],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/brand-advertisement-hero.jpg",
+  ogImage: "/images/brand-advertisement-hero.jpg",
 })
 
 export default function BrandAdvertisementPage() {

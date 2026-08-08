@@ -33,7 +33,7 @@ export default function ServiceTemplate({
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-black opacity-60" />
             <Image
-              src="https://www.nkdigital.agency/clients/oneders/img/logistics-management-tour.webp"
+              src="/images/logistics-management-tour.webp"
               alt={title}
               fill
               className="object-cover"
@@ -144,7 +144,7 @@ export default function ServiceTemplate({
                       <Image
                         src={
                           study.imageSrc ||
-                          "https://www.nkdigital.agency/clients/oneders/img/logistics-management-small.jpg" ||
+                          "/images/logistics-management-small.jpg" ||
                           "/placeholder.svg" ||
                           "/placeholder.svg" ||
                           "/placeholder.svg"

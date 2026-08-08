@@ -15,7 +15,7 @@ export const metadata = generateMetadata({
     "educational events",
     "student activities",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/college-fests.JPG",
+  ogImage: "/images/college-fests.JPG",
 })
 
 export default function SchoolCollegeFestPage() {
@@ -25,7 +25,7 @@ export default function SchoolCollegeFestPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/school-college-fest-header.jpg"
+          src="/images/school-college-fest-header.jpg"
           alt="School College Fest"
           fill
           className="object-cover"
@@ -81,13 +81,13 @@ export default function SchoolCollegeFestPage() {
             title: "National Technical Festival",
             description:
               "We managed a premier technical festival for an engineering college, coordinating 50+ events, workshops, and competitions with 5,000+ participants from across the country, resulting in record attendance and sponsorship.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/kiet-jubin-fest.JPG",
+            imageSrc: "/images/kiet-jubin-fest.JPG",
           },
           {
             title: "Inter-College Cultural Fest",
             description:
               "Our team provided end-to-end management for a three-day cultural festival featuring competitions, workshops, and celebrity performances that attracted participants from 100+ colleges and universities.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/school-college-fest.jpeg",
+            imageSrc: "/images/school-college-fest.jpeg",
           },
         ]}
       />

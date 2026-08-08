@@ -15,7 +15,7 @@ export const metadata = generateMetadata({
     "wedding planning India",
     "international wedding planning",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/destination-weddings-india.jpg",
+  ogImage: "/images/destination-weddings-india.jpg",
 })
 
 export default function DestinationWeddingPage() {
@@ -25,7 +25,7 @@ export default function DestinationWeddingPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/destination-weddings-india.jpg"
+          src="/images/destination-weddings-india.jpg"
           alt="Destination Wedding Events"
           fill
           className="object-cover"
@@ -77,12 +77,12 @@ export default function DestinationWeddingPage() {
           {
             title: "Royal Palace Wedding",
             description: "An opulent royal palace wedding in Rajasthan with 300 international guests.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/royal-rajasthan-wedding.webp",
+            imageSrc: "/images/royal-rajasthan-wedding.webp",
           },
           {
             title: "Beach Wedding in Goa",
             description: "A romantic beachfront celebration with 250 guests.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/goa-wedding-view.avif",
+            imageSrc: "/images/goa-wedding-view.avif",
           },
         ]}
       />

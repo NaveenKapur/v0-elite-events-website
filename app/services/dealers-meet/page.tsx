@@ -15,7 +15,7 @@ export const metadata = generateMetadata({
     "business networking events",
     "sales network meetings",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/header-dealers-meet.jpg",
+  ogImage: "/images/header-dealers-meet.jpg",
 })
 
 export default function DealersMeetPage() {
@@ -25,7 +25,7 @@ export default function DealersMeetPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/header-dealers-meet.jpg"
+          src="/images/header-dealers-meet.jpg"
           alt="Dealers Meet"
           fill
           className="object-cover"
@@ -81,13 +81,13 @@ export default function DealersMeetPage() {
             title: "Automotive Dealer Conference",
             description:
               "We designed and executed a national dealer conference for a leading automotive brand, featuring new product reveals, interactive training sessions, and strategic networking opportunities that resulted in a 30% increase in dealer satisfaction scores.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/automotive-dealer-meet.jpeg",
+            imageSrc: "/images/automotive-dealer-meet.jpeg",
           },
           {
             title: "FMCG Distribution Network Meet",
             description:
               "Our team managed a regional distributors meet for an FMCG company, creating an engaging program that combined business strategy sessions with recognition ceremonies and entertainment, strengthening the company's relationship with its distribution network.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/dealers-meet1.jpg",
+            imageSrc: "/images/dealers-meet1.jpg",
           },
         ]}
       />

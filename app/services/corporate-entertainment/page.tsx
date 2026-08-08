@@ -13,7 +13,7 @@ export const metadata = generateMetadata({
     "executive events",
     "corporate galas",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/corporate-entertainment-header.jpeg",
+  ogImage: "/images/corporate-entertainment-header.jpeg",
 })
 
 export default function CorporateEntertainmentPage() {

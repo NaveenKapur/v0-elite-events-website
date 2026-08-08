@@ -13,7 +13,7 @@ export const metadata = generateMetadata({
     "cultural performances",
     "corporate entertainment",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/entertainment.jpeg",
+  ogImage: "/images/entertainment.jpeg",
 })
 
 export default function EntertainmentPage() {

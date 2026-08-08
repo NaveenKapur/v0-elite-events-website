@@ -14,7 +14,7 @@ export const metadata = generateMetadata({
     "event production",
     "event technical services",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/lightning-dj-sound.jpg",
+  ogImage: "/images/lightning-dj-sound.jpg",
 })
 
 export default function DJSoundLightPage() {
@@ -24,7 +24,7 @@ export default function DJSoundLightPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/lightning-dj-sound.jpg"
+          src="/images/lightning-dj-sound.jpg"
           alt="DJ Sound and Light"
           fill
           className="object-cover"
@@ -79,13 +79,13 @@ export default function DJSoundLightPage() {
             title: "Corporate Product Launch",
             description:
               "We designed and executed a comprehensive audio-visual experience for a major product launch, featuring custom sound design, synchronized lighting, and immersive video mapping that highlighted the product's features and created a memorable reveal moment.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/dj-sound-and-light-show.webp",
+            imageSrc: "/images/dj-sound-and-light-show.webp",
           },
           {
             title: "Destination Wedding Production",
             description:
               "Our team provided end-to-end DJ, sound, and lighting solutions for a three-day destination wedding, creating distinct atmospheres for each event from an elegant welcome dinner to a high-energy reception celebration.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/destination-wedding-dj.jpeg",
+            imageSrc: "/images/destination-wedding-dj.jpeg",
           },
         ]}
       />

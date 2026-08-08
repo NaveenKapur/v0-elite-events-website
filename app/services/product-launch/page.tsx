@@ -15,7 +15,7 @@ export const metadata = generateMetadata({
     "product introduction",
     "market launch events",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/product-launch-hero.png",
+  ogImage: "/images/product-launch-hero.png",
 })
 
 export default function ProductLaunchPage() {
@@ -25,7 +25,7 @@ export default function ProductLaunchPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/product-launch-hero.png"
+          src="/images/product-launch-hero.png"
           alt="Product Launch"
           fill
           className="object-cover"
@@ -80,13 +80,13 @@ export default function ProductLaunchPage() {
             title: "Luxury Automotive Launch",
             description:
               "We conceptualized and executed the launch of a luxury vehicle, creating a dramatic reveal experience and immersive brand journey that generated extensive media coverage and exceeded pre-order targets by 40%.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/product-launch-event.jpg",
+            imageSrc: "/images/product-launch-event.jpg",
           },
           {
             title: "Tech Product Ecosystem Launch",
             description:
               "Our team managed a multi-product technology launch event, designing interactive demonstration zones and creating compelling storytelling moments that effectively communicated the ecosystem's value to media, partners, and consumers.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/product-launch-home.png",
+            imageSrc: "/images/product-launch-home.png",
           },
         ]}
       />

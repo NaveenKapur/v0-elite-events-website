@@ -64,42 +64,42 @@ const artists = [
   {
     name: "Salman Khan",
     type: "Bollywood Actor",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/salman-khan-bollywood.avif",
+    imageSrc: "/images/salman-khan-bollywood.avif",
   },
   {
     name: "Shefali Jariwala",
     type: "Dancer",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/shefali-jariwala-dancer.jpg",
+    imageSrc: "/images/shefali-jariwala-dancer.jpg",
   },
   {
     name: "Shruti Pathak",
     type: "Singer",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/shruti-pathak-singer.jpg",
+    imageSrc: "/images/shruti-pathak-singer.jpg",
   },
   {
     name: "Neeti Mohan",
     type: "Singer",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/neeti-mohan-bollywood.jpg",
+    imageSrc: "/images/neeti-mohan-bollywood.jpg",
   },
   {
     name: "Jubin Nautiyal",
     type: "Singer",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/jubin-nautiyal-singer.webp",
+    imageSrc: "/images/jubin-nautiyal-singer.webp",
   },
   {
     name: "Mika Singh",
     type: "Singer",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/mika-singh-singer.jpg",
+    imageSrc: "/images/mika-singh-singer.jpg",
   },
   {
     name: "Sonu Nigam",
     type: "Singer",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/sonu-nigam-singer.webp",
+    imageSrc: "/images/sonu-nigam-singer.webp",
   },
   {
     name: "Neha Kakkar",
     type: "Singer",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/neha-kakkar-singer.webp",
+    imageSrc: "/images/neha-kakkar-singer.webp",
   },
 ]
 
@@ -109,13 +109,13 @@ const caseStudies = [
     title: "Celebrity Wedding Performance",
     description:
       "We coordinated and managed performances by multiple A-list artists for a high-profile wedding, handling all logistics, technical requirements, and security to deliver a seamless entertainment experience for the couple and their guests.",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/private-event-host.JPG",
+    imageSrc: "/images/private-event-host.JPG",
   },
   {
     title: "Cultural Festival Production",
     description:
       "Our team curated and produced a three-day cultural festival featuring over 50 performers across multiple stages, showcasing diverse art forms and creating an immersive experience for 10,000+ attendees.",
-    imageSrc: "https://www.nkdigital.agency/clients/oneders/img/celebrity-jubin-nautiyal.JPG",
+    imageSrc: "/images/celebrity-jubin-nautiyal.JPG",
   },
 ]
 
@@ -138,7 +138,7 @@ export default function EntertainmentPageClient() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-black opacity-70" />
             <Image
-              src="https://www.nkdigital.agency/clients/oneders/img/entertainment.jpeg"
+              src="/images/entertainment.jpeg"
               alt="Entertainment Services"
               fill
               className="object-cover"

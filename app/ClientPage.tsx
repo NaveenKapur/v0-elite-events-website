@@ -491,7 +491,7 @@ export default function ClientPage() {
 
                 <div className="relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
                   <Image
-                    src="https://www.nkdigital.agency/clients/oneders/img/wedding-events-home.jpg"
+                    src="/images/wedding-events-home.jpg"
                     alt="Luxury wedding event setup"
                     fill
                     className="object-cover"
@@ -640,42 +640,42 @@ export default function ClientPage() {
                 <div key={i} className="group relative aspect-[4/5] overflow-hidden rounded-xl">
                   {i === 0 ? (
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/monaco-wedding.jpg"
+                      src="/images/monaco-wedding.jpg"
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : i === 1 ? (
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/corporate-gala-dubai.jpg"
+                      src="/images/corporate-gala-dubai.jpg"
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : i === 2 ? (
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/school-college-fest.jpeg"
+                      src="/images/school-college-fest.jpeg"
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : i === 3 ? (
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/fashion-shows-home.jpg"
+                      src="/images/fashion-shows-home.jpg"
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : i === 4 ? (
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/services-header.jpg"
+                      src="/images/services-header.jpg"
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : (
                     <Image
-                      src="https://www.nkdigital.agency/clients/oneders/img/product-launch-home.png"
+                      src="/images/product-launch-home.png"
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"

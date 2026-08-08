@@ -9,7 +9,7 @@ export const metadata = generateMetadata({
     "Comprehensive event planning and management services that transform your vision into flawlessly executed experiences for corporate and social events.",
   canonical: "/services/event-management",
   keywords: ["event management", "event planning", "event coordination", "event execution", "event logistics"],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/event-managment-header.jpg",
+  ogImage: "/images/event-managment-header.jpg",
 })
 
 export default function EventManagementPage() {
@@ -19,7 +19,7 @@ export default function EventManagementPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/event-managment-header.jpg"
+          src="/images/event-managment-header.jpg"
           alt="Event Management"
           fill
           className="object-cover"
@@ -75,13 +75,13 @@ export default function EventManagementPage() {
             title: "International Corporate Conference",
             description:
               "We managed a three-day international conference for 500+ attendees, handling everything from venue selection and speaker coordination to technical production and hospitality management, resulting in the client's highest-rated event to date.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/event-management-abroad.jpg",
+            imageSrc: "/images/event-management-abroad.jpg",
           },
           {
             title: "Celebrity Wedding Management",
             description:
               "Our team provided comprehensive management for a high-profile wedding, coordinating multiple events across various venues while ensuring privacy, security, and flawless execution of the couple's unique vision.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/event-management.jpeg",
+            imageSrc: "/images/event-management.jpeg",
           },
         ]}
       />

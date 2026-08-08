@@ -13,7 +13,7 @@ export const metadata = generateMetadata({
     "wedding planning services",
     "event management offerings",
   ],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/services-header.jpg",
+  ogImage: "/images/services-header.jpg",
 })
 
 export default function ServicesPage() {

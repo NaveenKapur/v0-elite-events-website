@@ -9,7 +9,7 @@ export const metadata = generateMetadata({
     "Comprehensive logistics solutions that ensure the smooth and efficient execution of your event, from start to finish with meticulous planning and coordination.",
   canonical: "/services/logistics",
   keywords: ["event logistics", "event operations", "venue management", "event transportation", "event equipment"],
-  ogImage: "https://www.nkdigital.agency/clients/oneders/img/logistics-.jpg",
+  ogImage: "/images/logistics-.jpg",
 })
 
 export default function LogisticsPage() {
@@ -19,7 +19,7 @@ export default function LogisticsPage() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-60" />
         <Image
-          src="https://www.nkdigital.agency/clients/oneders/img/logistics-.jpg"
+          src="/images/logistics-.jpg"
           alt="Logistics Services - Aerial view of distribution center with trucks and warehouses"
           fill
           className="object-cover"
@@ -75,13 +75,13 @@ export default function LogisticsPage() {
             title: "Large-Scale Music Festival",
             description:
               "We managed all logistics for a three-day music festival with 50,000+ attendees, coordinating transportation, security, vendor management, and on-site operations to ensure a safe and seamless experience.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/logistics-management-small.jpg",
+            imageSrc: "/images/logistics-management-small.jpg",
           },
           {
             title: "International Product Launch",
             description:
               "Our team handled the complex logistics for a global product launch, coordinating international shipping, customs clearance, venue setup, and on-site support across multiple countries.",
-            imageSrc: "https://www.nkdigital.agency/clients/oneders/img/logistics-management-tour.webp",
+            imageSrc: "/images/logistics-management-tour.webp",
           },
         ]}
       />
