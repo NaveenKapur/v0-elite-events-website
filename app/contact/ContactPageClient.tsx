@@ -131,7 +131,7 @@ export default function ContactPageClient() {
             <div className="absolute inset-0 bg-black opacity-60" />
             <Image
               src="/images/1ders-event-contact.webp"
-              alt="Contact Onder Events - Elegant event venue with floral decorations"
+              alt="Contact 1Ders Events - Elegant event venue with floral decorations"
               fill
               className="object-cover"
               priority
@@ -152,7 +152,7 @@ export default function ContactPageClient() {
                 <span className="bg-gradient-to-r from-gradientPurple via-white to-gradientPink bg-clip-text text-transparent [text-shadow:_none]">
                   Contact
                 </span>{" "}
-                Onder Events
+                1Ders Events
               </h1>
 
               <p className="mx-auto mt-8 max-w-2xl rounded-lg bg-black/40 px-6 py-4 text-center text-xl text-white/90 backdrop-blur-sm md:text-2xl">
