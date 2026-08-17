@@ -3,6 +3,7 @@ import "./globals.css"
 import { Inter, Playfair_Display } from "next/font/google"
 import type { Metadata } from "next"
 import { EventPlanningBusinessSchema } from "@/components/structured-data"
+import { Header } from "@/components/header"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -104,7 +105,10 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <EventPlanningBusinessSchema />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

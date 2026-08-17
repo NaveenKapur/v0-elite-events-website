@@ -412,7 +412,7 @@ export default function EntertainmentPageClient() {
                 <div className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
                   <Button
                     className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-gradientPurple to-gradientPink px-8 py-6 text-lg font-medium text-white sm:w-auto"
-                    onClick={() => (window.location.href = "tel:09810101023")}
+                    onClick={() => (window.location.href = "https://wa.me/9198101023")}
                   >
                     <span className="relative z-10">Discuss Your Event</span>
                     <span className="absolute inset-0 z-0 bg-gradient-to-r from-gradientPink to-gradientPurple opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>

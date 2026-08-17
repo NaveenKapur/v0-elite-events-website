@@ -18,62 +18,6 @@ export default function DisclaimerPage() {
         <div className="absolute left-1/3 top-1/2 h-[300px] w-[300px] rounded-full bg-brandOrange blur-[120px]" />
       </div>
 
-      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-xl">
-        <div className="container flex h-24 items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1ders%20logo%20footer-osmbo6RLTfJkhYe08S8SA3pM1BPV4l.png"
-              alt="1DERS Events Solutions"
-              width={120}
-              height={40}
-              className="h-12 w-auto object-contain"
-            />
-          </Link>
-          <nav className="hidden gap-8 md:flex">
-            {[
-              { name: "Home", href: "/" },
-              { name: "Services", href: "/services" },
-              { name: "About", href: "/about" },
-              { name: "Portfolio", href: "/portfolio" },
-              { name: "Contact", href: "/contact" },
-            ].map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="relative text-sm font-medium text-white/80 transition-colors hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-gradientPurple after:to-gradientPink after:transition-all hover:after:w-full"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-          <div className="flex items-center gap-4">
-            <Button
-              variant="outline"
-              size="icon"
-              className="border-white/20 text-white hover:bg-white/10 hover:text-white md:hidden"
-              onClick={() => document.getElementById("mobile-menu")?.classList.toggle("translate-x-full")}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-5 w-5"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </div>
-        </div>
-      </header>
 
       {/* Mobile menu */}
       <div
@@ -200,7 +144,7 @@ export default function DisclaimerPage() {
                   <br />
                   Phone: +91 9810101023
                   <br />
-                  Address: R-14/125, Rajnagar, Ghaziabad, Uttar Pradesh 201002
+                  Address: 803, 4th Floor, South Extension I, Arjun Nagar, Kotla Mubarakpur, New Delhi, Delhi 110003
                 </p>
               </div>
             </div>

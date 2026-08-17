@@ -6,32 +6,6 @@ import { Button } from "@/components/ui/button"
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-black">
-      <header className="w-full py-6 px-4 md:px-8 border-b border-white/10">
-        <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
-          <Link href="/" className="text-white text-xl font-medium">
-            Planza <span className="text-xs align-super">®</span>
-          </Link>
-          <div className="flex items-center gap-8">
-            <nav className="hidden md:flex items-center gap-8">
-              <Link href="/events" className="text-white/80 hover:text-white text-sm">
-                Events
-              </Link>
-              <Link href="/projects" className="text-white text-sm">
-                Projects
-              </Link>
-              <Link href="/pricing" className="text-white/80 hover:text-white text-sm">
-                Pricing
-              </Link>
-              <Link href="/contact" className="text-white/80 hover:text-white text-sm">
-                Contact
-              </Link>
-            </nav>
-            <Button variant="outline" className="rounded-full bg-white text-black hover:bg-white/90 border-0">
-              Get this Template
-            </Button>
-          </div>
-        </div>
-      </header>
 
       <main className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-24">
         <h1 className="text-4xl md:text-5xl font-medium mb-12">Our Projects</h1>

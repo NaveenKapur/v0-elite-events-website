@@ -189,7 +189,7 @@ export default function ServiceTemplate({
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
                 <Link
-                  href="tel:09810101023"
+                  href="https://wa.me/9198101023"
                   className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-gradientPurple to-gradientPink px-8 py-6 text-lg font-medium text-white sm:w-auto"
                 >
                   Discuss Your Event

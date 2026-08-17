@@ -197,7 +197,7 @@ const youtubeVideos = [
     category: "weddings",
     description: "Beautiful moments from a beachfront celebration in Goa.",
     thumbnailSrc: "/images/beach-wedding-video-thumb.jpg",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "-cU2hcfCk54",
   },
   {
     id: 3,
@@ -228,11 +228,11 @@ const youtubeVideos = [
   },
   {
     id: 6,
-    title: "Automotive Reveal",
+    title: "Tata Steel Event - BTS",
     category: "product-launches",
     description: "Dramatic unveiling of a luxury vehicle.",
     thumbnailSrc: "/images/automotive-video-thumb.jpg",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "mBfnGCQRCoo",
   },
   {
     id: 7,
@@ -245,11 +245,11 @@ const youtubeVideos = [
   },
   {
     id: 8,
-    title: "Trade Show Success Story",
+    title: "BAI Conclave",
     category: "exhibitions",
     description: "Client testimonial and results from a major trade show.",
     thumbnailSrc: "/images/trade-show-video-thumb.jpg",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "hRLfYVA7MSk",
   },
   {
     id: 9,
@@ -304,11 +304,11 @@ const youtubeVideos = [
   },
   {
     id: 15,
-    title: "Automotive Reveal",
+    title: "Corporate Gig",
     category: "product-launches",
     description: "Dramatic unveiling of a luxury vehicle.",
     thumbnailSrc: "/images/automotive-video-thumb.jpg",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "lPsGZF4_GQQ",
   },
   {
     id: 16,
@@ -345,30 +345,16 @@ function YouTubeEmbed({
 
 export default function PortfolioClientPage() {
   const [activeCategory, setActiveCategory] = useState("all")
-  const [activeMediaType, setActiveMediaType] = useState("all")
   const [showVideoModal, setShowVideoModal] = useState(false)
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
   const [showFilterMenu, setShowFilterMenu] = useState(false)
   const [filteredItems, setFilteredItems] = useState<any[]>([])
 
-  // Apply filters to portfolio items and videos
+  // Apply filters to videos
   useEffect(() => {
-    let items: any[] = []
-
-    // Filter by media type
-    if (activeMediaType === "all" || activeMediaType === "images") {
-      const filteredImages = portfolioItems.filter(
-        (item) => activeCategory === "all" || item.category === activeCategory,
-      )
-      items = [...items, ...filteredImages]
-    }
-
-    if (activeMediaType === "all" || activeMediaType === "videos") {
-      const filteredVideos = youtubeVideos.filter(
-        (video) => activeCategory === "all" || video.category === activeCategory,
-      )
-      items = [...items, ...filteredVideos]
-    }
+    let items = youtubeVideos.filter(
+      (video) => activeCategory === "all" || video.category === activeCategory
+    )
 
     // Sort items to show featured items first
     items.sort((a, b) => {
@@ -378,7 +364,7 @@ export default function PortfolioClientPage() {
     })
 
     setFilteredItems(items)
-  }, [activeCategory, activeMediaType])
+  }, [activeCategory])
 
   // Add this after the useEffect hook
   useEffect(() => {
@@ -411,117 +397,6 @@ export default function PortfolioClientPage() {
         <div className="absolute left-1/3 top-1/2 h-[300px] w-[300px] rounded-full bg-brandOrange blur-[120px]" />
       </div>
 
-      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-xl">
-        <div className="container flex h-24 items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1ders%20logo%20footer-osmbo6RLTfJkhYe08S8SA3pM1BPV4l.png"
-              alt="1DERS Events Solutions"
-              width={120}
-              height={40}
-              className="h-12 w-auto object-contain"
-            />
-          </Link>
-          <nav className="hidden gap-8 md:flex">
-            <Link
-              href="/"
-              className="relative text-sm font-medium text-white/80 transition-colors hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-gradientPurple after:to-gradientPink after:transition-all hover:after:w-full"
-            >
-              Home
-            </Link>
-            <DropdownMenu trigger="Services" items={serviceItems} />
-            <Link
-              href="/about"
-              className="relative text-sm font-medium text-white/80 transition-colors hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-gradientPurple after:to-gradientPink after:transition-all hover:after:w-full"
-            >
-              About
-            </Link>
-            <Link
-              href="/portfolio"
-              className="relative text-sm font-medium text-white transition-colors hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-gradientPurple after:to-gradientPink after:transition-all hover:after:w-full"
-            >
-              Portfolio
-            </Link>
-            <Link
-              href="/contact"
-              className="relative text-sm font-medium text-white/80 transition-colors hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-gradientPurple after:to-gradientPink after:transition-all hover:after:w-full"
-            >
-              Contact
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-3">
-              <Link
-                href="https://www.facebook.com/1ders/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://instagram.com/1ders.events?igshid=MDM4ZDc5MmU="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://www.youtube.com/@1dersevents"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors"
-                aria-label="Youtube"
-              >
-                <Youtube className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/company/1ders-events-solutions-pvt-ltd-/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </Link>
-            </div>
-            <Button
-              asChild
-              variant="outline"
-              className="hidden rounded-full border-0 bg-white/10 text-white backdrop-blur-md hover:bg-white/20 md:flex"
-            >
-              <a href="tel:+919810248854">Book Consultation</a>
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="border-white/20 text-white hover:bg-white/10 hover:text-white md:hidden"
-              onClick={() => document.getElementById("mobile-menu")?.classList.toggle("translate-x-full")}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-5 w-5"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </div>
-        </div>
-      </header>
 
       {/* Mobile menu */}
       <div
@@ -645,7 +520,7 @@ export default function PortfolioClientPage() {
             </Link>
           </div>
           <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            <a href="tel:+919810248854">Book Consultation</a>
+            <a href="https://wa.me/9198101023">Book Consultation</a>
           </Button>
         </div>
       </div>
@@ -744,27 +619,6 @@ export default function PortfolioClientPage() {
                       </div>
                     </div>
 
-                    <div className="mb-6">
-                      <h4 className="mb-3 text-sm font-medium text-white/80">Media Type</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {mediaTypes.map((type) => (
-                          <Button
-                            key={type.id}
-                            variant={activeMediaType === type.id ? "default" : "outline"}
-                            size="sm"
-                            className={`rounded-full px-4 py-1 text-sm ${
-                              activeMediaType === type.id
-                                ? "bg-gradient-to-r from-gradientPurple to-gradientPink text-white"
-                                : "border-white/20 bg-black/50 text-white hover:bg-white/10"
-                            }`}
-                            onClick={() => setActiveMediaType(type.id)}
-                          >
-                            {type.name}
-                          </Button>
-                        ))}
-                      </div>
-                    </div>
-
                     <Button
                       className="w-full bg-gradient-to-r from-gradientPurple to-gradientPink text-white"
                       onClick={() => setShowFilterMenu(false)}
@@ -812,26 +666,6 @@ export default function PortfolioClientPage() {
                     </button>
                   ))}
                 </div>
-              </div>
-
-              {/* Media Type Filters */}
-              <div className="flex flex-wrap gap-4 items-center">
-                <span className="text-sm font-medium text-white/80">Media Type:</span>
-                {mediaTypes.map((type) => (
-                  <Button
-                    key={type.id}
-                    variant={activeMediaType === type.id ? "default" : "outline"}
-                    size="sm"
-                    className={`rounded-full px-4 py-1 text-sm ${
-                      activeMediaType === type.id
-                        ? "bg-gradient-to-r from-gradientPurple to-gradientPink text-white"
-                        : "border-white/20 bg-black/50 text-white hover:bg-white/10"
-                    }`}
-                    onClick={() => setActiveMediaType(type.id)}
-                  >
-                    {type.name}
-                  </Button>
-                ))}
               </div>
             </div>
 
@@ -916,7 +750,6 @@ export default function PortfolioClientPage() {
                   className="mt-6 bg-gradient-to-r from-gradientPurple to-gradientPink text-white"
                   onClick={() => {
                     setActiveCategory("all")
-                    setActiveMediaType("all")
                   }}
                 >
                   Reset Filters
@@ -948,11 +781,10 @@ export default function PortfolioClientPage() {
         )}
 
         {/* Category Sections */}
-        {activeCategory === "all" && activeMediaType === "all" && (
+        {activeCategory === "all" && (
           <>
             {categories.slice(1).map((category) => {
               const categoryItems: any[] = [
-                ...portfolioItems.filter((item) => item.category === category.id),
                 ...youtubeVideos.filter((video) => video.category === category.id),
               ].slice(0, 4)
 
@@ -1062,7 +894,7 @@ export default function PortfolioClientPage() {
                 <div className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
                   <Button
                     className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-gradientPurple to-gradientPink px-8 py-6 text-lg font-medium text-white sm:w-auto"
-                    onClick={() => (window.location.href = "tel:09810101023")}
+                    onClick={() => (window.location.href = "https://wa.me/9198101023")}
                   >
                     <span className="relative z-10">Discuss Your Event</span>
                     <span className="absolute inset-0 z-0 bg-gradient-to-r from-gradientPink to-gradientPurple opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>

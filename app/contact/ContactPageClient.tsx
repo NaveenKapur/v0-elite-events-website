@@ -1,13 +1,55 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Mail, Phone, Clock, Instagram, Facebook, Linkedin, Youtube } from "lucide-react"
+import { MapPin, Mail, Phone, Clock, Instagram, Facebook, Linkedin, Youtube, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ConfettiOverlay } from "@/components/confetti-overlay"
 import { Footer } from "@/components/footer"
 
 export default function ContactPageClient() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error"; message: string } | null>(null)
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    eventType: "",
+    message: "",
+  })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { id, value } = e.target
+    // Convert hyphenated IDs to camelCase for formData mapping
+    const key = id.replace(/-([a-z])/g, (g) => g[1].toUpperCase())
+    setFormData((prev) => ({ ...prev, [key]: value }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    const text = `Hi! I'd like to make an inquiry.\n\nName: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nEvent Type: ${formData.eventType}\n\nMessage:\n${formData.message}`
+    window.open(`https://wa.me/919810101023?text=${encodeURIComponent(text)}`, "_blank")
+
+    setSubmitStatus({
+      type: "success",
+      message: "Redirecting to WhatsApp...",
+    })
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      eventType: "",
+      message: "",
+    })
+    setIsSubmitting(false)
+  }
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-black via-zinc-900 to-black">
       <ConfettiOverlay />
@@ -19,69 +61,6 @@ export default function ContactPageClient() {
         <div className="absolute left-1/3 top-1/2 h-[300px] w-[300px] rounded-full bg-brandOrange blur-[120px]" />
       </div>
 
-      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-xl">
-        <div className="container flex h-24 items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1ders%20logo%20footer-osmbo6RLTfJkhYe08S8SA3pM1BPV4l.png"
-              alt="1DERS Events Solutions"
-              width={120}
-              height={40}
-              className="h-12 w-auto object-contain"
-            />
-          </Link>
-          <nav className="hidden gap-8 md:flex">
-            {[
-              { name: "Home", href: "/" },
-              { name: "Services", href: "/services" },
-              { name: "About", href: "/about" },
-              { name: "Portfolio", href: "/portfolio" },
-              { name: "Contact", href: "/contact" },
-            ].map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`relative text-sm font-medium ${item.name === "Contact" ? "text-white" : "text-white/80"} transition-colors hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-gradientPurple after:to-gradientPink after:transition-all hover:after:w-full ${item.name === "Contact" ? "after:w-full" : ""}`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-          <div className="flex items-center gap-4">
-            <Button
-              asChild
-              variant="outline"
-              className="hidden rounded-full border-0 bg-white/10 text-white backdrop-blur-md hover:bg-white/20 md:flex"
-            >
-              <a href="tel:+919810248854">Book Consultation</a>
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="border-white/20 text-white hover:bg-white/10 hover:text-white md:hidden"
-              onClick={() => document.getElementById("mobile-menu")?.classList.toggle("translate-x-full")}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-5 w-5"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </div>
-        </div>
-      </header>
 
       {/* Mobile menu */}
       <div
@@ -140,7 +119,7 @@ export default function ContactPageClient() {
             </Link>
           ))}
           <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            <a href="tel:+919810248854">Book Consultation</a>
+            <a href="https://wa.me/9198101023">Book Consultation</a>
           </Button>
         </div>
       </div>
@@ -211,7 +190,7 @@ export default function ContactPageClient() {
                   Fill out the form below and our team will get back to you within 24 hours to discuss your event needs.
                 </p>
 
-                <form className="mt-8 space-y-4 sm:space-y-6">
+                <form onSubmit={handleSubmit} className="mt-8 space-y-4 sm:space-y-6">
                   <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
                     <div className="space-y-2">
                       <label htmlFor="first-name" className="text-sm font-medium text-white">
@@ -219,6 +198,9 @@ export default function ContactPageClient() {
                       </label>
                       <input
                         id="first-name"
+                        required
+                        value={formData.firstName}
+                        onChange={handleChange}
                         className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 backdrop-blur-sm focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20"
                         placeholder="Enter your first name"
                       />
@@ -229,6 +211,8 @@ export default function ContactPageClient() {
                       </label>
                       <input
                         id="last-name"
+                        value={formData.lastName}
+                        onChange={handleChange}
                         className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 backdrop-blur-sm focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20"
                         placeholder="Enter your last name"
                       />
@@ -242,6 +226,9 @@ export default function ContactPageClient() {
                     <input
                       id="email"
                       type="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 backdrop-blur-sm focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20"
                       placeholder="Enter your email"
                     />
@@ -254,6 +241,8 @@ export default function ContactPageClient() {
                     <input
                       id="phone"
                       type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 backdrop-blur-sm focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20"
                       placeholder="Enter your phone number"
                     />
@@ -265,8 +254,10 @@ export default function ContactPageClient() {
                     </label>
                     <select
                       id="event-type"
-                      defaultValue=""
-                      className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 backdrop-blur-sm focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20"
+                      required
+                      value={formData.eventType}
+                      onChange={handleChange}
+                      className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 backdrop-blur-sm focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20 [&>option]:bg-zinc-900"
                     >
                       <option value="" disabled>
                         Select event type
@@ -285,13 +276,39 @@ export default function ContactPageClient() {
                     </label>
                     <textarea
                       id="message"
+                      required
+                      value={formData.message}
+                      onChange={handleChange}
                       className="h-32 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 backdrop-blur-sm focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20"
                       placeholder="Tell us about your event and requirements"
                     ></textarea>
                   </div>
 
-                  <Button className="w-full bg-gradient-to-r from-gradientPurple to-gradientPink py-3 text-white hover:opacity-90">
-                    Send Message
+                  {submitStatus && (
+                    <div
+                      className={`rounded-lg p-4 text-sm font-medium ${
+                        submitStatus.type === "success"
+                          ? "bg-green-500/20 text-green-200 border border-green-500/30"
+                          : "bg-red-500/20 text-red-200 border border-red-500/30"
+                      }`}
+                    >
+                      {submitStatus.message}
+                    </div>
+                  )}
+
+                  <Button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className="w-full bg-gradient-to-r from-gradientPurple to-gradientPink py-3 text-white hover:opacity-90 disabled:opacity-70"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      "Send Message"
+                    )}
                   </Button>
                 </form>
               </div>
@@ -326,10 +343,10 @@ export default function ContactPageClient() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white">Phone</h3>
-                      <p className="mt-1 text-white/80">+91 9818316005 (Main)</p>
+                      <p className="mt-1 text-white/80">+91 88000 25884 (Primary)</p>
                       <p className="text-white/80">+91 9810248854 (Corporate)</p>
-                      <p className="text-white/80">+91 8800994477 (Wedding)</p>
-                      <p className="text-white/80">+91 88000 25884 (Career)</p>
+                      <p className="text-white/80">+91 88000 25886 (Wedding)</p>
+                      <p className="text-white/80">+91 9818479023 (New Events)</p>
                     </div>
                   </div>
 
@@ -353,8 +370,9 @@ export default function ContactPageClient() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white">Head Office</h3>
-                      <p className="mt-1 text-white/80">R-14/125, Rajnagar</p>
-                      <p className="text-white/80">Ghaziabad, Uttar Pradesh 201002</p>
+                      <p className="mt-1 text-white/80">803, 4th Floor, South Extension I,</p>
+                      <p className="text-white/80">Arjun Nagar, Kotla Mubarakpur,</p>
+                      <p className="text-white/80">New Delhi, Delhi 110003</p>
                     </div>
                   </div>
 
@@ -492,8 +510,8 @@ export default function ContactPageClient() {
             <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  city: "Ghaziabad (Head Office)",
-                  address: "R-14/125, Rajnagar, Ghaziabad, Uttar Pradesh 201002",
+                  city: "New Delhi (Head Office)",
+                  address: "803, 4th Floor, South Extension I, Arjun Nagar, Kotla Mubarakpur, New Delhi, Delhi 110003",
                   phone: "+91 9810101023",
                 },
                 {
@@ -530,6 +548,11 @@ export default function ContactPageClient() {
                   city: "Chandigarh",
                   address: "S.C.O. 339-340, 2nd Floor Sector - 35 B, Chandigarh- 160022",
                   phone: "+91 9810101023",
+                },
+                {
+                  city: "Lucknow",
+                  address: "G31/49, Opposite The Perfeft Hotel, Transport Nagar, Lucknow, 226012",
+                  phone: "+91 9628980181",
                 },
               ].map((office, i) => (
                 <div
@@ -582,7 +605,7 @@ export default function ContactPageClient() {
                 <div className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
                   <Button
                     className="group relative overflow-hidden rounded-full bg-gradient-to-r from-gradientPurple to-gradientPink px-8 py-6 text-lg font-medium text-white"
-                    onClick={() => (window.location.href = "tel:09818316005")}
+                    onClick={() => (window.location.href = "https://wa.me/9198101023")}
                   >
                     <span className="relative z-10">Discuss Your Event</span>
                     <span className="absolute inset-0 z-0 bg-gradient-to-r from-gradientPink to-gradientPurple opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>

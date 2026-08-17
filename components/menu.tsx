@@ -151,7 +151,7 @@ export function Menu() {
             Contact
           </Link>
           <Button asChild className="mt-4 bg-gradient-to-r from-gradientPurple to-gradientPink text-white hover:opacity-90">
-            <a href="tel:+919810248854">Book Consultation</a>
+            <a href="https://wa.me/9198101023">Book Consultation</a>
           </Button>
         </div>
         <div className="mt-6 flex items-center gap-6 border-t border-white/10 pt-6">
